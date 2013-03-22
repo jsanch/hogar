@@ -25,6 +25,7 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'haml-rails'
 gem 'high_voltage'
+gem 'font-awesome-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
