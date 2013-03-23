@@ -1,0 +1,103 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{charset: "utf-8"}
+    %meta(http-equiv= "X-UA-Compatible" content= "IE=Edge,chrome=1")
+    %meta{name: "viewport", content:"width=device-width, initial-scale=1.0"}
+
+    %title ubiqua
+    %meta{name: "description" content: "ubiqua's main website"} 
+    %meta{name: "author" content: "ubiqua"} 
+
+    = csrf_meta_tags
+
+    / le HTML5 shim, for IE6-8 support of HTML elements
+    /[if lt IE 9]
+      %script{type: "text/javascript", src:"//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"}
+
+    / le stylesheets
+    = stylesheet_link_tag "application", media: "all"
+
+  %body
+    %header
+      / le navbar
+      .navbar.navbar-fixed-top
+        .navbar-inner
+          .container
+            / logo
+            %a.brand.logo{href: "index.html"}  
+              %img{src: "logo.png"}
+            / menu
+            .navigation
+             %nav
+              %ul.nav.topnav
+
+    / le subhead
+    %section#subintro
+    
+    / le breadcrumbs
+    %section#breadcrumb
+      .container
+        .row
+          .span12
+            %ul.breadcrumb.notop
+              %li.active Inicio
+
+    /le content
+    %section#maincontent            
+      = yield
+
+    /le footer
+    %footer.footer
+      .container
+        .row
+          .span4
+            .widget
+              / logo
+              %a.brand.logo{href: "index.html"}
+                %img{src: "logo-dark.png"}
+              %address
+                %i.icon-map-marker
+                %strong HMGV, S.A.
+                %br
+                Calle 50, Plaza Sitio Antiguao Local 1 PB
+                %br 
+                Urbanización San Francisco
+                %br
+                Ciuidad de Panamá, Panamá
+              %span
+                %i.icon-phone
+                %a{href: "tel:+50762135138"} +507 6213 5138
+              %br
+              %span
+                %i.icon-envelope-alt
+                %a{href: "mailto:ubiqua@ubiqua.me"} ubiqua@ubiqua.me 
+              %br
+              .widget
+                %ul.social-links
+                  %li
+                    %a{href: "https://www.facebook.com/ubiqua.me", title: "Facebook"}
+                      %i.icon-rounded.icon-32.icon-facebook.social-media.footer
+                  %li
+                    %a{href: "https://github.com/ubiqua", title: "Github"}
+                      %i.icon-rounded.icon-32.icon-github.social-media.footer
+          .span3
+            .widget
+              %h5 Empresa
+                %ul.regular
+                  %li
+                    %a{href: "#"} Sobre Nosotros
+          .span3
+            .widget
+              %h5 Paginas
+                %ul.regular
+                  %li
+                    %a{href: "#"} Acertijos
+      .verybottom
+        .container
+          .row
+            .span12
+              %p &copy; ubiqua 2013
+    
+    / le javascripts -- Placed at the end of the document so the pages load faster
+    = javascript_include_tag "application"
