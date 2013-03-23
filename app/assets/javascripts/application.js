@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require modernizr
+//= require bootstrap
+//= require spices
 //= require_tree .
