@@ -1,0 +1,8 @@
+%li{class: active_if_home}
+  %a{href: "/pages/index"} Inicio
+%li{class: active_if_aboutus}
+  %a{href: "/pages/about"} Sobre Nosotros
+%li{class: active_if_blog}
+  %a{href: "#"} Blog
+%li{class: active_if_contact}
+  %a{href: "/pages/contact"} Contactanos

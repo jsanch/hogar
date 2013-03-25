@@ -195,7 +195,7 @@ nav select {
 
 section#intro{
 	max-width: 100%;
-	background:#f5f5f5 url(../img/head-shadow.png) no-repeat top center;
+	background:#f5f5f5 url(/assets/head-shadow.png) no-repeat top center;
 	height:auto;
 	margin: 0 auto;
 	margin-top:80px;
@@ -206,7 +206,7 @@ section#intro{
 }
 
 .line {
-	background:url(../img/line.jpg) top repeat-x;
+	background:url(/assets/line.jpg) top repeat-x;
 	height:10px;
 }
 
@@ -448,7 +448,7 @@ ul.filter li.active a{
 }
 .da-thumbs li  article {
 	position: absolute;
-	background-image:url(../img/image_hover.png);
+	background-image:url(/assets/image_hover.png);
 	background-repeat:repeat;
 	text-shadow:none;
 	width: 100%;
@@ -613,7 +613,7 @@ aside .widget ul.cat {
 }
 aside .widget ul.cat li {
 	padding-left:24px;
-  background-image: url("../img/glyphicons-halflings.png");
+  background-image: url("/assets/glyphicons-halflings.png");
   background-repeat: no-repeat;
 	background-position: -456px -69px;	
 }
@@ -1303,10 +1303,10 @@ h2.error {
 	ol.alpha-lower li				{ list-style:lower-alpha; }
 	ol.decimal li					{ list-style:decimal; }
 	ol.roman li					{ list-style:upper-roman; }
-	ul.diamond li					{ padding:0 0 0 15px; background:transparent url('../img/list/diamond.png') no-repeat 0 6px; }
-	ul.arrow li					{ padding:0 0 0 20px; background:transparent url('../img/list/arrow.png') no-repeat 0 6px; }	
-	ul.check li					{ padding:0 0 0 18px; background:transparent url('../img/list/check.png') no-repeat 0 6px; }
-	ul.circle li					{ padding:0 0 0 15px; background:transparent url('../img/list/circle.png') no-repeat 0 8px; }
+	ul.diamond li					{ padding:0 0 0 15px; background:transparent url('/assets/diamond.png') no-repeat 0 6px; }
+	ul.arrow li					{ padding:0 0 0 20px; background:transparent url('/assets/arrow.png') no-repeat 0 6px; }	
+	ul.check li					{ padding:0 0 0 18px; background:transparent url('/assets/check.png') no-repeat 0 6px; }
+	ul.circle li					{ padding:0 0 0 15px; background:transparent url('/assets/circle.png') no-repeat 0 8px; }
     ul.list ul, ul.list ol, ol.list ol, ol.list ul 		{ margin:4px 0 5px 30px; font-size:90%;  }
 	ul.list ul li, ul ol li,	ol.list ol li, ol.list ul li 	 { margin-bottom:6px; }
 	ul.list li , ul.list li							{ line-height:21px; margin: 0 0 12px 5px; }
@@ -1356,7 +1356,7 @@ footer ul.regular,footer ul.nav {
 
 footer ul.regular li {
 	background-attachment: scroll;
-	background: url(../img/list/white-arrow.png) no-repeat 0 5px;
+	background: url(/assets/white-arrow.png) no-repeat 0 5px;
 	padding-left:15px;
 	margin-top:5px;
 	margin-left:0;

@@ -1,4 +1,13 @@
 /***************************
+        Landing Page
+***************************/
+
+$('#form-email.landingpage + .btn-large').click(function(){
+  $(".well.thanks").show();
+  $(".well.rec").hide();
+});
+
+/***************************
          Acertijos
 ***************************/
 

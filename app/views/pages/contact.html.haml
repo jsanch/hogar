@@ -1,0 +1,71 @@
+- content_for :navbar_btns do
+  = render partial: "pages/navbar_btns", locals: { active_if_home: "", active_if_aboutus: "", active_if_blog: "", active_if_contact: "active" }
+-content_for :subintro do
+  %section#subintro.brainteaser.contact-map
+    %iframe{src: "https://maps.google.com/maps/ms?msa=0&msid=216549314379670436232.0004d85e767f42522a541&ie=UTF8&t=m&ll=8.99182,-79.511662&spn=0.042388,0.128746&z=14&output=embed"}
+    .container
+      %section.call-to-action
+        %span.main-message.animated.bounceInDown
+          %strong chotea
+        %br
+        %span.sub-message.animated.bounceInUp
+          orgallusamente ubicados en 
+          %strong Panamá 
+
+.container
+  .row
+    .span4
+      %aside
+        .widget
+          %h4 Contactanos
+          %ul
+            %li
+              %label
+                %i.icon-phone
+                %strong Telefono :
+              %a{href: "tel:+50762135138"} +507 6213 5138
+            %li
+              %label
+                %i.icon-envelope-alt
+                %strong Correo Electrónico :
+              %a{href: "mailto:ubiqua@ubiqua.me"} ubiqua@ubiqua.me
+            %li
+              %label
+                %i.icon-map-marker
+                %strong Dirección :
+              %address
+                %strong HMGV, S.A.
+                %br/
+                Calle 50, Plaza Sitio Antiguao Local 1 PB
+                %br/
+                Urbanización San Francisco
+                %br/
+                Ciuidad de Panamá, Panamá
+        .widget
+          %ul.social-links
+            %li
+              %a{href: "https://www.facebook.com/ubiqua.me", title: "Facebook"}
+                %i.icon-rounded.icon-32.icon-facebook.social-media
+            %li
+              %a{href: "https://github.com/ubiqua", title: "Github"}
+                %i.icon-rounded.icon-32.icon-github-alt.social-media
+    .span8
+      .spacer30
+      %form.contact-form{action: "#", method: "post", name: "comment-form"}
+        .row
+          .span4
+            %label
+              Nombre
+              %span *
+            %input#form-name.input-block-level{placeholder: "Tu nombre", type: "text"}/
+          .span4
+            %label
+              Correo Electrnóico
+              %span *
+            %input#form-email.input-block-level{placeholder: "Tu correo electrónico", type: "email"}/
+          .span8
+            %label
+              Mensaje
+              %span *
+            %textarea.input-block-level{placeholder: "Tu mensaje", rows: "9"}
+            %button.btn.btn-color{type: "submit"} Enviar

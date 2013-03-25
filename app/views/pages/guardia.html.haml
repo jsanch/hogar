@@ -1,0 +1,24 @@
+- content_for :navbar_btns do
+  = render partial: "pages/navbar_btns", locals: { active_if_home: "", active_if_aboutus: "", active_if_blog: "", active_if_contact: "" }
+-content_for :subintro do
+  %section#subintro.brainteaser.guards
+    .container
+      %section.call-to-action
+        %span.main-message.animated.bounceInDown
+          Acertijo
+        %br
+        %span.sub-message.animated.bounceInUp
+          guardias y puertas
+
+.container
+  .row
+    .span12
+      %p.lead
+        %i.icon-quote-left
+        Dos guardias cuidan dos puertas, detrás de una hay un premio. Un guardia siempre dice la verdad y el otro siempre miente. No sabes cuál es cuál y sólo puedes hacer una pregunta a uno de los guardias. ¿Qué preguntas para saber cuál es la puerta correcta?
+        %i.icon-quote-right
+      %a#show-ans.btn.btn-default.btn-small{href: "#"} ver respuesta
+      .well.answer{style: "display: none;"}
+        %strong Respusta:
+        %p
+          Le preguntas a cualquiera de los dos: ¿Cuál puerta diría el otro guardia que es la correcta? Escoges la otra puerta.

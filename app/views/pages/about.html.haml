@@ -1,0 +1,111 @@
+- content_for :navbar_btns do
+  = render partial: "pages/navbar_btns", locals: { active_if_home: "", active_if_aboutus: "active", active_if_blog: "", active_if_contact: "" }
+-content_for :subintro do
+  %section#subintro.about-us
+    .container
+      %section.call-to-action
+        %span.main-message.animated.bounceInDown
+          nos
+          %strong encanta
+          lo que hacemos
+        %br
+        %span.sub-message.animated.bounceInUp
+          siempre estamos
+          %strong superandonos!
+
+.container
+  .row
+    .span12
+      %h2 Sobre Nosotros
+      %h3 ubiqua
+      %p
+        Lorem ipsum dolor sit amet, per cu graece fierent dignissim, et reque dicat blandit quo, ad mel stet aperiri insolens. Eum esse ancillae conclusionemque at. Ut nec ullum homero. Autem legimus in sed. Ad eam iudico delectus, aperiri maiestatis eos eu. Mea viris abhorreant at, eirmod vivendo an ius.
+      %p
+        Cu nec iudicabit percipitur, eu sit possim viderer malorum. In homero audiam aperiri eos, ea noster virtute usu, vim id inimicus philosophia. Id propriae percipit consulatu nam, in verear sensibus deseruisse has. Magna moderatius ei eum, at eum tractatos contentiones. Noster electram at his, partem repudiandae contentiones ea eam. Nemore forensibus delicatissimi eu his. Est salutandi imperdiet te, sale magna commune ex pri. Diam alia sanctus ei nam, ut vel pertinax delicata, facilis invenire sea ex. Pro eu sale prompta, congue inermis mea ei.
+      %p
+        Ei eam diam quando sapientem, ad pri enim vero eleifend. Eu everti inimicus his, te his nisl vocent. At rebum omnium blandit duo, malis scriptorem vis te. Altera mandamus eam ei, ex usu odio mutat debitis. At quo laudem iuvaret albucius, magna mundi honestatis pri ut, eos ei suas feugait. Vim tation dicant ornatus in.
+  .row.team
+    .span12
+      %h3 El Equipo
+      .row
+        .span6
+          %img.team-member-pic{height: "200px", src: "/assets/jorge.jpg", width: "200px"}
+          .team-member-info
+            %h4 Jorge L. García
+            %p
+              Ingeniero en Ciencias de Sistemas enfocado en sistemas económicos y financieros de University of Pennsylvania. Jorge además hizo una especialización en Matemáticas y Economía.
+            .widget
+              %ul.social-links
+                %li
+                  %a{href: "https://www.facebook.com/jgarciach", title: "Facebook"}
+                    %i.icon-rounded.icon-32.icon-facebook.social-media
+                %li
+                  %a{href: "https://twitter.com/jgarciachap", title: "Twitter"}
+                    %i.icon-twitter.icon-rounded.icon-32.social-media
+                %li
+                  %a{href: "http://www.linkedin.com/pub/jorge-luis-garcia-chapman/17/877/94", title: "LinkedIn"}
+                    %i.icon-linkedin.icon-rounded.icon-32.social-media
+                %li
+                  %a{href: "https://github.com/jgarciach", title: "Github"}
+                    %i.icon-rounded.icon-32.icon-github-alt.social-media
+        .span6
+          %img.team-member-pic{height: "200px", src: "/assets/gaby.png", width: "200px"}/
+          .team-member-info
+            %h4 Gabriela Hurtado
+            %p
+              Licenciada en Finanzas y Mercadeo de McIntire School of Commerce parte de University of Virginia. Gabriela también hizo una especialización en Relaciones Internacionales.
+            .widget
+              %ul.social-links
+                %li
+                  %a{href: "https://www.facebook.com/gabriela.hurtado7", title: "Facebook"}
+                    %i.icon-rounded.icon-32.icon-facebook.social-media
+                %li
+                  %a{href: "https://twitter.com/GabyHurtado7", title: "Twitter"}
+                    %i.icon-twitter.icon-rounded.icon-32.social-media
+                %li
+                  %a{href: "http://www.linkedin.com/pub/gabriela-hurtado/33/ba4/a28/en", title: "LinkedIn"}
+                    %i.icon-linkedin.icon-rounded.icon-32.social-media
+                %li
+                  %a{href: "https://github.com/gabrielah", title: "Github"}
+                    %i.icon-rounded.icon-32.icon-github-alt.social-media
+      .row
+        .span6
+          %img.team-member-pic{height: "200px", src: "/assets/diego.png", width: "200px"}/
+          .team-member-info
+            %h4 Diego Molino
+            %p
+              Ingeniero en Ciencias de Sistemas enfocado en sistemas económicos y financieros de University of Pennsylvania. Jorge además hizo una especialización en Matemáticas y Economía.
+            .widget
+              %ul.social-links
+                %li
+                  %a{href: "https://www.facebook.com/diego.molino", title: "Facebook"}
+                    %i.icon-rounded.icon-32.icon-facebook.social-media
+                %li
+                  %a{href: "https://twitter.com/dmolino17", title: "Twitter"}
+                    %i.icon-twitter.icon-rounded.icon-32.social-media
+                %li
+                  %a{href: "http://www.linkedin.com/pub/diego-molino/32/b46/b42", title: "LinkedIn"}
+                    %i.icon-linkedin.icon-rounded.icon-32.social-media
+                %li
+                  %a{href: "https://github.com/dmolino", title: "Github"}
+                    %i.icon-rounded.icon-32.icon-github-alt.social-media
+        .span6
+          %img.team-member-pic{height: "200px", src: "/assets/jose.JPG", width: "200px"}/
+          .team-member-info
+            %h4 José R. Varela
+            %p
+              Licenciado en Negocios y Relaciones Internacionales de University of Pennsylvania. José Ramón fue parte del Huntsman Program del Wharton School of Business. Además hizo una especialización en Ciencias Computacionales.
+            .widget
+              %ul.social-links
+                %li
+                  %a{href: "https://www.facebook.com/joservarelaf", title: "Facebook"}
+                    %i.icon-rounded.icon-32.icon-facebook.social-media
+                %li
+                  %a{href: "https://twitter.com/jose_r_varela", title: "Twitter"}
+                    %i.icon-twitter.icon-rounded.icon-32.social-media
+                %li
+                  %a{href: "http://www.linkedin.com/pub/jose-varela/13/458/9a3", title: "LinkedIn"}
+                    %i.icon-linkedin.icon-rounded.icon-32.social-media
+                %li
+                  %a{href: "https://github.com/cabe56", title: "Github"}
+                    %i.icon-rounded.icon-32.icon-github-alt.social-media

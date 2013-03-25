@@ -1,0 +1,24 @@
+- content_for :navbar_btns do
+  = render partial: "pages/navbar_btns", locals: { active_if_home: "", active_if_aboutus: "", active_if_blog: "", active_if_contact: "" }
+-content_for :subintro do
+  %section#subintro.brainteaser.ropes
+    .container
+      %section.call-to-action
+        %span.main-message.animated.bounceInDown
+          Acertijo
+        %br
+        %span.sub-message.animated.bounceInUp
+          quemando cuerdas 
+
+.container
+  .row
+    .span12
+      %p.lead
+        %i.icon-quote-left
+        Tienes dos cuerdas y fósforos para prenderlas. Las cuerdas están hechas de distintos materiales por esto se queman a distintos ritmos pero cada una demora 1 hora en quemarse completamente. ¿Cómo harías para medir 45 minutos?
+        %i.icon-quote-right
+      %a#show-ans.btn.btn-default.btn-small{href: "#"} ver respuesta
+      .well.answer{style: "display: none;"}
+        %strong Respusta:
+        %p
+          Se prenden los dos extremos de una de las cuerdas y un extremo de la otra. La primera cuerda se consumirá exactamente en media hora. En ese momento se prende el extremo que no se estaba consumiendo de la otra cuerda, la cual se consumirá exactamente en un cuarto de hora a partir de ese instante, sumando un total de 45 minutos transcurridos.

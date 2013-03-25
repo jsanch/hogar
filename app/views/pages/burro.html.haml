@@ -1,0 +1,24 @@
+- content_for :navbar_btns do
+  = render partial: "pages/navbar_btns", locals: { active_if_home: "", active_if_aboutus: "", active_if_blog: "", active_if_contact: "" }
+-content_for :subintro do
+  %section#subintro.brainteaser.donkey
+    .container
+      %section.call-to-action
+        %span.main-message.animated.bounceInDown
+          Acertijo
+        %br
+        %span.sub-message.animated.bounceInUp
+          el viaje del burro 
+
+.container
+  .row
+    .span12
+      %p.lead
+        %i.icon-quote-left
+        Un burro viaja exactamente la misma distancia diariamente. Dos de sus patas han viajado 40 km y las otras dos 41km. El burro es completamente normal (no hay 1 km entre sus patas). ¿Cómo es esto posible?
+        %i.icon-quote-right
+      %a#show-ans.btn.btn-default.btn-small{href: "#"} ver respuesta
+      .well.answer{style: "display: none;"}
+        %strong Respusta:
+        %p
+          El burro el trayecto que recorre el burro es un círculo por lo tanto las patas de en la parte de afuera del círculo caminan más distancia que las patas  en la parte de adentro del círculo.

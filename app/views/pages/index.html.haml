@@ -1,0 +1,42 @@
+- content_for :navbar_btns do
+  = render partial: "pages/navbar_btns", locals: { active_if_home: "active", active_if_aboutus: "", active_if_blog: "", active_if_contact: "" }
+-content_for :subintro do
+  %section#subintro.landingpage
+    .container
+      %section.call-to-action
+        %span.main-message.animated.bounceInDown
+          %strong ubiqua 
+          AVE
+        %br
+        %span.sub-message.animated.bounceInUp 
+          %strong Automatiza
+          y
+          %strong Administra
+          tus ventas
+
+.container
+  .row.services
+    %h3 Servicios
+    .bullet.span3
+      %i.bulletIcon.icon-picture
+      %h4 Muestra Tus Productos
+      %p.moreInfo Catálogo con fotos, precios y detalles de todos tus productos.
+    .bullet.span3
+      %i.bulletIcon.icon-tablet
+      %h4 Recibe Pedidos
+      %p.moreInfo Cotizaciones y pedidos desde cualquier dispositivo: celular, tablet o desktop.
+    .bullet.span3
+      %i.bulletIcon.icon-bar-chart
+      %h4 Analiza Resultados
+      %p.moreInfo Reportes de ventas en tiempo real por fecha, producto, marca, vendedor o cliente.
+    .bullet.span3
+      %i.bulletIcon.icon-cloud-upload
+      %h4 Súbete a la nube
+      %p.moreInfo Aplicación web que se integra con tu sistema ERP y base de datos.
+  .rec.well
+    %h3 Danos tu email si te interesa recibir más información sobre nuestro producto:
+    %form.form-inline
+      %input#form-email.landingpage{name: "email", placeholder: "Email", type: "email"}/
+      .btn-large.btn-color.landingpage Enviar
+  .thanks.well
+    %h3 Gracias, pronto te estaremos contactando!

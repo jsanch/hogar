@@ -6,8 +6,8 @@
     %meta{name: "viewport", content:"width=device-width, initial-scale=1.0"}
 
     %title ubiqua
-    %meta{name: "description" content: "ubiqua's main website"} 
-    %meta{name: "author" content: "ubiqua"} 
+    %meta{name: "description", content: "ubiqua's main website"} 
+    %meta{name: "author", content: "ubiqua"} 
 
     = csrf_meta_tags
 
@@ -26,15 +26,17 @@
           .container
             / logo
             %a.brand.logo{href: "index.html"}  
-              %img{src: "logo.png"}
+              %img{src: "/assets/logo.png"}
             / menu
             .navigation
               %nav
                 %ul.nav.topnav
+                  = yield :navbar_btns
 
     / le subhead
     %section#subintro
-    
+      = yield :subintro    
+
     / le breadcrumbs
     %section#breadcrumb
       .container
@@ -55,7 +57,7 @@
             .widget
               / logo
               %a.brand.logo{href: "index.html"}
-                %img{src: "logo-dark.png"}
+                %img{src: "/assets/logo-dark.png"}
               %address
                 %i.icon-map-marker
                 %strong HMGV, S.A.
@@ -80,19 +82,34 @@
                       %i.icon-rounded.icon-32.icon-facebook.social-media.footer
                   %li
                     %a{href: "https://github.com/ubiqua", title: "Github"}
-                      %i.icon-rounded.icon-32.icon-github.social-media.footer
+                      %i.icon-rounded.icon-32.icon-github-alt.social-media.footer
           .span3
             .widget
               %h5 Empresa
-                %ul.regular
-                  %li
-                    %a{href: "#"} Sobre Nosotros
+              %ul.regular
+                %li
+                  %a{href: "/pages/about"} Sobre Nosotros
+                %li
+                  %a{href: "/pages/contact"} Contactanos
+
           .span3
             .widget
-              %h5 Paginas
-                %ul.regular
-                  %li
-                    %a{href: "#"} Acertijos
+              %h5 Acertijos
+              %ul.regular
+                %li
+                  %a{href: "/pages/bolas"} bolas
+                %li
+                  %a{href: "/pages/burro"} burro
+                %li
+                  %a{href: "/pages/carrera"} carrera
+                %li
+                  %a{href: "/pages/cuerdas"} cuerdas
+                %li
+                  %a{href: "/pages/granjero"} granjero
+                %li
+                  %a{href: "/pages/guardia"} guardias
+                %li
+                  %a{href: "/pages/relojes"} relojes
       .verybottom
         .container
           .row

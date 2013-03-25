@@ -1,4 +1,45 @@
 /*****************************
+        Landing Page
+*****************************/
+
+#subintro.landingpage {
+  background:#fff url('/assets/warehousenoblue.jpg') no-repeat center center;
+}
+
+.services .span3 {
+  text-align: center !important;
+}
+
+.bullet i {
+  font-size: 100px;
+  margin: 0;
+}
+
+.rec.well, .thanks.well {
+  text-align: center;
+  border-bottom: 5px solid #f16b23;
+}
+
+.thanks.well {
+  display: none;
+}
+
+#form-email.landingpage {
+  margin-top: -2px;
+  min-height: 29px !important;
+  width: 500px;
+}
+
+.landingpage.btn-color:hover {
+  cursor: pointer;
+}
+
+.landingpage.btn-color {
+  display: inline-block;
+  padding-bottom: 9px;
+}
+
+/*****************************
         Call to Action
 *****************************/
 section#subintro {
@@ -62,15 +103,15 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 }
 
 #form-name {
-  background: url('../img/formname.png') #fff no-repeat 7px;
+  background: url('/assets/formname.png') #fff no-repeat 7px;
 }
 
 #form-email {
-  background: url('../img/formmail.png') #fff no-repeat 7px;
+  background: url('/assets/formmail.png') #fff no-repeat 7px;
 }
 
 #form-phone {
-  background: url('../img/formname.png') #fff no-repeat 7px;
+  background: url('/assets/formname.png') #fff no-repeat 7px;
 }
 
 /*****************************
@@ -93,6 +134,14 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
   -webkit-border-radius: 2px;
 }
 
+.btn-large {
+  padding: 8px 18px;
+  font-size: 14px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
 .btn-default {
   background-color: #e6e6e6;
   background-image: none;
@@ -108,10 +157,12 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 }
 
 .icon-rounded.social-media {
-  border-radius: 16px;
-  -moz-border-radius: 16px;
-  -webkit-border-radius: 16px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
   width: 24px;
+  line-height: 26px;
   padding-left: 5px;
   font-size: 18px;
   -webkit-transition: background linear .2s;  
@@ -156,7 +207,7 @@ footer .social-links {
 *****************************/
 
 #subintro.about-us {
-  background:#f5f5f5 url('../img/balloon.jpg') no-repeat center center;
+  background:#f5f5f5 url('/assets/balloon.jpg') no-repeat center center;
 }
 
 .team-member-pic {
@@ -184,7 +235,7 @@ footer .social-links {
 *****************************/
 
 #subintro.blog {
-  background: #f5f5f5 url('../img/coffee.jpg') no-repeat center center;
+  background: #f5f5f5 url('/assets/coffee.jpg') no-repeat center center;
 }
 
 /*****************************
@@ -192,31 +243,31 @@ footer .social-links {
 *****************************/
 
 #subintro.brainteaser.donkey {
-  background: #f5f5f5 url('../img/donkey.jpg') no-repeat right 65%;
+  background: #f5f5f5 url('/assets/donkey.jpg') no-repeat right 65%;
 }
 
 #subintro.brainteaser.ropes {
-  background: #f5f5f5 url('../img/rope.jpg') no-repeat center center;
+  background: #f5f5f5 url('/assets/rope.jpg') no-repeat center center;
 }
 
 #subintro.brainteaser.guards {
-  background: #f5f5f5 url('../img/guards.jpg') no-repeat center center;
+  background: #f5f5f5 url('/assets/guards.jpg') no-repeat center center;
 }
 
 #subintro.brainteaser.camels {
-  background: #f5f5f5 url('../img/camels.jpg') no-repeat right center;
+  background: #f5f5f5 url('/assets/camels.jpg') no-repeat right center;
 }
 
 #subintro.brainteaser.hourglass {
-  background: #f5f5f5 url('../img/hourglass.jpg') no-repeat center center;
+  background: #f5f5f5 url('/assets/hourglass.jpg') no-repeat center center;
 }
 
 #subintro.brainteaser.farmer {
-  background: #f5f5f5 url('../img/fence.jpg') no-repeat center center;
+  background: #f5f5f5 url('/assets/fence.jpg') no-repeat center center;
 }
 
 #subintro.brainteaser.balls {
-  background: #f5f5f5 url('../img/balls.jpg') no-repeat center center;
+  background: #f5f5f5 url('/assets/balls.jpg') no-repeat center center;
 }
 
 .answer p {
@@ -230,5 +281,5 @@ footer .social-links {
 *****************************/
 
 #subintro.error404 {
-  background:#f5f5f5 url('../img/404.jpg') no-repeat center center;
+  background:#f5f5f5 url('/assets/404.jpg') no-repeat center center;
 }

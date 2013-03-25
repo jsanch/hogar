@@ -1,0 +1,24 @@
+- content_for :navbar_btns do
+  = render partial: "pages/navbar_btns", locals: { active_if_home: "", active_if_aboutus: "", active_if_blog: "", active_if_contact: "" }
+-content_for :subintro do
+  %section#subintro.brainteaser.camels
+    .container
+      %section.call-to-action
+        %span.main-message.animated.bounceInDown
+          Acertijo
+        %br
+        %span.sub-message.animated.bounceInUp
+          carrera de camellos
+
+.container
+  .row
+    .span12
+      %p.lead
+        %i.icon-quote-left
+        Un padre le dice a sus dos hijos que, para decidir quien va a heredar su fortuna, deben competir en una carrera en sus camellos. El camello que llegue de último a Estambul, gana. Los hijos, confundidos, le piden consejos a un hombre sabio. Después de escucharlo, los hijos se van en los camellos hacia Estambul lo más rápido que pueden. ¿Qué les dijo el hombre sabio?
+        %i.icon-quote-right
+      %a#show-ans.btn.btn-default.btn-small{href: "#"} ver respuesta
+      .well.answer{style: "display: none;"}
+        %strong Respusta:
+        %p
+          El hombre sabio le dice a los hermanos que intercambien camellos.

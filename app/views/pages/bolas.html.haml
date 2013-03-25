@@ -1,0 +1,24 @@
+- content_for :navbar_btns do
+  = render partial: "pages/navbar_btns", locals: { active_if_home: "", active_if_aboutus: "", active_if_blog: "", active_if_contact: "" }
+-content_for :subintro do
+  %section#subintro.brainteaser.balls
+    .container
+      %section.call-to-action
+        %span.main-message.animated.bounceInDown
+          Acertijo
+        %br
+        %span.sub-message.animated.bounceInUp
+          bolas en la balanza
+
+.container
+  .row
+    .span12
+      %p.lead
+        %i.icon-quote-left
+        Hay nueve bolas del mismo tamaño, ocho pesan lo mismo y una pesa un poquito más. ¿Cómo sabes cual es la más pesada, si solo puedes pesarlas usando una balanza y solo puedes usar la balanza dos veces?
+        %i.icon-quote-right
+      %a#show-ans.btn.btn-default.btn-small{href: "#"} ver respuesta
+      .well.answer{style: "display: none;"}
+        %strong Respusta:
+        %p
+          Divides las nueve bolas entre tres grupos de tres. Pesas los dos grupos y escoges el grupo más pesado. Escoges dos bolas de ese grupo y las pesas. Si una es más pesada, esa es la bola que buscas. Si las dos pesan lo mismo, la bola que buscas es la que no pesaste de ese grupo.
