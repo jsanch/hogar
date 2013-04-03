@@ -5,14 +5,23 @@
 #subintro.landingpage {
   background:#fff url('/assets/warehousenoblue.jpg') no-repeat center center;
 }
-
+.mainMessage{
+  padding-top: 15px !important;
+}
 .services .span3 {
   text-align: center !important;
 }
-
+.services .span4 {
+  text-align: center !important;
+}
 .bullet i {
-  font-size: 100px;
+  font-size: 70px;
   margin: 0;
+  text-align:center;
+}
+.moreInfo{
+  text-align:justify;
+
 }
 
 .rec.well, .thanks.well {
@@ -22,6 +31,11 @@
 
 .thanks.well {
   display: none;
+}
+
+.callToAction{
+  padding:5px;
+  font-size: 20px;
 }
 
 #form-email.landingpage {
