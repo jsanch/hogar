@@ -1,40 +1,45 @@
 - content_for :navbar_btns do
-  = render partial: "pages/navbar_btns", locals: { active_if_home: "active", active_if_aboutus: "", active_if_blog: "", active_if_contact: "" }
+  = render partial: "pages/navbar_btns", locals: { active_if_home: "active", active_if_aboutus: "", active_if_blog: "", active_if_contact: "", active_if_product: "" }
 -content_for :subintro do
-  %section#subintro.landingpage
+  %section#subintro.landingpage.mainMessage
     .container
-      %section.call-to-action
+      %section.call-to-action.span8
         %span.main-message.animated.bounceInDown
           %strong ubiqua 
           AVE
         %br
-        %span.sub-message.animated.bounceInUp 
-          %strong Automatiza
+        %span.sub-message.animated.bounceInDown 
+          %strong Conecta
           y
           %strong Administra
-          tus ventas
-
+          tu fuerza de ventas
+        %a.btn.btn-large.btn-color.button-call.animated.bounceInUp{href: "/product"}
+          Mira más información 
+          %i.icon-double-angle-right
+    %section.span4.landing-image.animated.bounceInDown   
+      %img{src:"/assets/deviceNew.png", alt:""}
 .container
   .row.services
-    %h3 Servicios
-    .bullet.span3
-      %i.bulletIcon.icon-picture
-      %h4 Muestra Tus Productos
-      %p.moreInfo Catálogo con fotos, precios y detalles de todos tus productos.
-    .bullet.span3
+    .bullet.span4
       %i.bulletIcon.icon-tablet
-      %h4 Recibe Pedidos
-      %p.moreInfo Cotizaciones y pedidos desde cualquier dispositivo: celular, tablet o desktop.
-    .bullet.span3
+      %h4 Revoluciona tu servicio al cliente
+      %p.moreInfo
+        Informa mejor a tus clientes brindándole a tu vendedor una aplicación móvil con catálogo digital de todos tus productos. 
+        %a{href: "/product"} Más información
+    .bullet.span4
+      %i.bulletIcon.icon-dashboard
+      %h4 Aumenta las visitas de tus vendedores
+      %p.moreInfo 
+        Agiliza tu proceso de ventas con un sistema de pedidos rápido que elimina órdenes a papel y se conecta con la facturación de la empresa.
+        %a{href: "/product"} Más información
+    .bullet.span4
       %i.bulletIcon.icon-bar-chart
-      %h4 Analiza Resultados
-      %p.moreInfo Reportes de ventas en tiempo real por fecha, producto, marca, vendedor o cliente.
-    .bullet.span3
-      %i.bulletIcon.icon-cloud-upload
-      %h4 Súbete a la nube
-      %p.moreInfo Aplicación web que se integra con tu sistema ERP y base de datos.
+      %h4 Mejora tu Inteligencia Empresarial
+      %p.moreInfo 
+        Ingresa a reportes con información de ventas según vendedor, cliente y/o producto desde cualquier dispositivo móvil o computadora en tiempo real.
+        %a{href: "/product"} Más información
   .rec.well
-    %h3 Danos tu email si te interesa recibir más información sobre nuestro producto:
+    %h3 Danos tu email si te interesa recibir más información sobre nuestros servicios:
     = form_tag(leads_path, class: "form-inline") do
       = email_field_tag "email", nil, id: "form-email", class: "landingpage", placeholder: "Email"
       = submit_tag "Enviar", class: "btn btn-large btn-color landingpage"

@@ -1,5 +1,5 @@
 - content_for :navbar_btns do
-  = render partial: "pages/navbar_btns", locals: { active_if_home: "", active_if_aboutus: "active", active_if_blog: "", active_if_contact: "" }
+  = render partial: "pages/navbar_btns", locals: { active_if_home: "", active_if_product: "", active_if_blog: "", active_if_contact: "" }
 -content_for :subintro do
   %section#subintro.about-us
     .container
@@ -11,10 +11,11 @@
         %br
         %span.sub-message.animated.bounceInUp
           siempre estamos
-          %strong superandonos!
+          %strong superándonos!
 
 .container
   .row
+  /
     .span12
       %h2 Sobre Nosotros
       %h3 ubiqua
@@ -74,7 +75,7 @@
           .team-member-info
             %h4 Diego Molino
             %p
-              Ingeniero en Ciencias de Sistemas enfocado en sistemas económicos y financieros de University of Pennsylvania. Jorge además hizo una especialización en Matemáticas y Economía.
+              Ingeniero Industrial enfocado en operaciones de Stanford University. Además, Diego hizo una especialización en Ciencias Computacionales.
             .widget
               %ul.social-links
                 %li
