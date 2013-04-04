@@ -1,15 +1,13 @@
 - content_for :navbar_btns do
-  = render partial: "pages/navbar_btns", locals: { active_if_home: "", active_if_aboutus: "", active_if_blog: "", active_if_contact: "active" }
+  = render partial: "pages/navbar_btns", locals: { active_if_home: "", active_if_product: "", active_if_blog: "", active_if_contact: "active" }
 -content_for :subintro do
   %section#subintro.brainteaser.contact-map
     %iframe{src: "https://maps.google.com/maps/ms?msa=0&msid=216549314379670436232.0004d85e767f42522a541&ie=UTF8&t=m&ll=8.99182,-79.511662&spn=0.042388,0.128746&z=14&output=embed"}
     .container
       %section.call-to-action
-        %span.main-message.animated.bounceInDown
-          %strong chotea
         %br
         %span.sub-message.animated.bounceInUp
-          orgullosamente ubicados en 
+          Orgullosamente ubicados en 
           %strong Panamá 
 
 .container

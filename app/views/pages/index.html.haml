@@ -1,18 +1,23 @@
 - content_for :navbar_btns do
-  = render partial: "pages/navbar_btns", locals: { active_if_home: "active", active_if_aboutus: "", active_if_blog: "", active_if_contact: "" }
+  = render partial: "pages/navbar_btns", locals: { active_if_home: "active", active_if_aboutus: "", active_if_blog: "", active_if_contact: "", active_if_product: "" }
 -content_for :subintro do
   %section#subintro.landingpage.mainMessage
     .container
-      %section.call-to-action
+      %section.call-to-action.span8
         %span.main-message.animated.bounceInDown
           %strong ubiqua 
           AVE
         %br
-        %span.sub-message.animated.bounceInUp 
+        %span.sub-message.animated.bounceInDown 
           %strong Conecta
           y
           %strong Administra
           tu fuerza de ventas
+        %a.btn.btn-large.btn-color.button-call.animated.bounceInUp{href: "/product"}
+          Mira más información 
+          %i.icon-double-angle-right
+    %section.span4.landing-image.animated.bounceInDown   
+      %img{src:"/assets/deviceNew.png", alt:""}
 .container
   .row.services
     .bullet.span4
@@ -20,20 +25,20 @@
       %h4 Revoluciona tu servicio al cliente
       %p.moreInfo
         Informa mejor a tus clientes brindándole a tu vendedor una aplicación móvil con catálogo digital de todos tus productos. 
-        %a mira más información
+        %a{href: "/product"} Más información
     .bullet.span4
       %i.bulletIcon.icon-dashboard
       %h4 Aumenta las visitas de tus vendedores
       %p.moreInfo 
         Agiliza tu proceso de ventas con un sistema de pedidos rápido que elimina órdenes a papel y se conecta con la facturación de la empresa.
-        %a mira más información
+        %a{href: "/product"} Más información
     .bullet.span4
       %i.bulletIcon.icon-bar-chart
       %h4 Mejora tu Inteligencia Empresarial
       %p.moreInfo 
         Ingresa a reportes con información de ventas según vendedor, cliente y/o producto desde cualquier dispositivo móvil o computadora en tiempo real.
-        %a mira más información
-  .rec.well.callToAction
+        %a{href: "/product"} Más información
+  .rec.well
     %h3 Danos tu email si te interesa recibir más información sobre nuestros servicios:
     %form.form-inline
       %input#form-email.landingpage{name: "email", placeholder: "Email", type: "email"}/

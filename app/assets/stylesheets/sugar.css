@@ -3,7 +3,7 @@
 *****************************/
 
 #subintro.landingpage {
-  background:#fff url('/assets/warehousenoblue.jpg') no-repeat center center;
+  background:#fff url('/assets/landing-background.jpg') no-repeat center center;
 }
 .mainMessage{
   padding-top: 15px !important;
@@ -19,11 +19,36 @@
   margin: 0;
   text-align:center;
 }
+.image-bullet{
+  width:70%;
+  border-radius: 7px;
+}
+.landing-image{
+  float: right;
+  padding-right: 10%;
+  padding-top: 2%;
+  height: auto;
+  width: 500px;
+}
+@media (max-width: 850px){
+  .landing-image img{
+    display: none;
+  }
+}
 .moreInfo{
   text-align:justify;
 
 }
 
+.button-call{
+  display: block;
+  width: 250px;
+  border-radius:6px !important;
+  font-size: 16px !important;
+  height:40px;
+  vertical-align: middle;
+  padding: 18px 0px 0px 0px !important
+}
 .rec.well, .thanks.well {
   text-align: center;
   border-bottom: 5px solid #f16b23;
@@ -75,7 +100,7 @@ section#subintro {
   text-align: left;
   color: #ffffff;
   position: absolute;
-  bottom: 10px;
+  bottom: 50px;
 }
 
 .call-to-action .main-message {
@@ -94,7 +119,7 @@ section#subintro {
 
 .call-to-action .sub-message {
   font-weight: 300;
-  font-size: 26px;
+  font-size: 18px;
   line-height: 30px;
   margin: 0 0 20px 0;
   padding: 10px;
@@ -234,7 +259,30 @@ footer .social-links {
 
 .team-member-info {
 }
-
+/*****************************
+         Producto
+*****************************/
+.product-description{
+  font-size: 18px;
+  line-height: 30px;
+}
+.product-content{
+  text-align: justify;
+  font-size: 15px;
+  vertical-align: middle;
+}
+.product-name{
+  font-size: 25px;
+}
+.feature-title {
+  text-align: left;
+}
+.feature-image{
+  width:80%;
+}
+#subintro.product-picture{
+  background:#fff url('/assets/image-product.jpg') no-repeat center center;
+}
 /*****************************
          Contactenos
 *****************************/
