@@ -2,6 +2,11 @@
   = render partial: "pages/navbar_btns", locals: { active_if_home: "", active_if_aboutus: "", active_if_blog: "", active_if_contact: "", active_if_product: "active" }
 -content_for :subintro do
   %section#subintro.product-picture
+    .container
+      %section.call-to-action.span8
+        %span.main-message.animated.bounceInDown
+          %strong ubiqua 
+          AVE
 .container.product-content
   .product-description
     Ahora tus gerentes y vendedores tendrán una herramienta completa que los acompañará a través de todo el proceso de ventas. Con ella, el gerente podrá monitorear las ventas de sus vendedores en tiempo real. Mientras tanto, los vendedores podrán mostrar sus productos organizadamente, hacer pedidos para clientes y enviarlos directamente al sistema central de la empresa desde su dispositivo móvil.
