@@ -34,6 +34,9 @@
   .landing-image img{
     display: none;
   }
+  #form-email.landingpage {
+  width:200px !important;
+  }
 }
 .moreInfo{
   text-align:justify;
@@ -282,6 +285,9 @@ footer .social-links {
 }
 #subintro.product-picture{
   background:#fff url('/assets/image-product.jpg') no-repeat center center;
+}
+.feature-info{
+  margin-bottom: 20px;
 }
 /*****************************
          Contactenos
