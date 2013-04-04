@@ -35,8 +35,8 @@
       %p.moreInfo Aplicación web que se integra con tu sistema ERP y base de datos.
   .rec.well
     %h3 Danos tu email si te interesa recibir más información sobre nuestro producto:
-    %form.form-inline
-      %input#form-email.landingpage{name: "email", placeholder: "Email", type: "email"}/
-      .btn-large.btn-color.landingpage Enviar
+    = form_tag(leads_path, class: "form-inline") do
+      = email_field_tag "email", nil, id: "form-email", class: "landingpage", placeholder: "Email"
+      = submit_tag "Enviar", class: "btn btn-large btn-color landingpage"
   .thanks.well
     %h3 Gracias, pronto te estaremos contactando!

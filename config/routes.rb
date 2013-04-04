@@ -1,4 +1,5 @@
 Hogar::Application.routes.draw do
+  match "/leads" => 'leads#send_thank_lead', :as => :leads, :via => :post
   match "/*id" => 'high_voltage/pages#show', :as => :page, :format => false
   root :to => 'high_voltage/pages#show', :id => 'index'
   # The priority is based upon order of creation:
