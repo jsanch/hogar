@@ -45,6 +45,7 @@
   %img{src:'/assets/process.png',alt:''}
   %hr
   .rec.well
+    %h3 Danos tu email si te interesa recibir más información sobre nuestros servicios:
     = form_tag(leads_path, class: "form-inline", remote: true) do
       = email_field_tag "email", nil, id: "form-email", class: "landingpage", placeholder: "Email"
       = submit_tag "Enviar", class: "btn btn-large btn-color landingpage"
