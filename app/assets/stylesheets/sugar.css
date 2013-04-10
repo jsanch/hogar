@@ -3,7 +3,7 @@
 *****************************/
 
 #subintro.landingpage {
-  background:#fff url('/assets/landing-background.jpg') no-repeat center center;
+  /*background:#fff url('/assets/landing-background.jpg') no-repeat center center;*/
 }
 .mainMessage{
   padding-top: 15px !important;
