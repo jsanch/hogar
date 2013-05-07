@@ -24,16 +24,17 @@
       .navbar.navbar-fixed-top
         .navbar-inner
           .container
+            %a.btn.btn-navbar.button-nav{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+              %span.icon-bar.bars
+              %span.icon-bar.bars
+              %span.icon-bar.bars
             / logo
             %a.brand.logo{href: "index.html"}  
               %img{src: "/assets/logo.png"}
             / menu
-            .navigation
-              %nav
-                %ul.nav.topnav
-                  = yield :navbar_btns
-
-    / le subhead
+            .navigation.nav-collapse.collapse
+              %ul.nav.topnav
+                = yield :navbar_btns
     %section#subintro
       = yield :subintro    
 
