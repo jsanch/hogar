@@ -38,10 +38,10 @@
       %p.moreInfo 
         Ingresa a reportes con información de ventas según vendedor, cliente y/o producto desde cualquier dispositivo móvil o computadora en tiempo real.
         %a{href: "/product"} Más información
-  .rec.well
+  .rec.well.email-send
     %h3 Danos tu email si te interesa recibir más información sobre nuestros servicios:
     = form_tag(leads_path, class: "form-inline", remote: true) do
       = email_field_tag "email", nil, id: "form-email", class: "landingpage", placeholder: "Email"
-      = submit_tag "Enviar", class: "btn btn-large btn-color landingpage"
+      = submit_tag "Enviar", class: "btn btn-large btn-color landingpage send-btn"
   .thanks.well
     %h3 Gracias, pronto te estaremos contactando!
