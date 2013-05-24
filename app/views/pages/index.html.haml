@@ -1,4 +1,11 @@
-- content_for :navbar_btns do
+-content_for :page_title do
+  ubiqua | Soluciones de Software Empresarial
+-content_for :description do 
+  ubiqua es una compañia que desarrolla software empresarial en panama. Ofrecemos una applicacion que administra la fuerza de ventas de empresas.  
+-content_for :keywords do
+  innovación empresarial, administración de ventas, software contable, software empresarial, soluciones en software, Panama,  fuerza de ventas, mejora tu servicio al cliente, desarollo de software
+
+-content_for :navbar_btns do
   = render partial: "pages/navbar_btns", locals: { active_if_home: "active", active_if_aboutus: "", active_if_blog: "", active_if_contact: "", active_if_product: "" }
 -content_for :subintro do
   %section#subintro.landingpage.mainMessage

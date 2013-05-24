@@ -1,14 +1,24 @@
 !!!
 %html{lang: "en"}
   %head
+
     %meta{:content => "DR_qm3gqrMWaoe-ujL-SQFimJkER3LdoSYeRbmLDarA", :name => "google-site-verification"}/
     %meta{charset: "utf-8"}
     %meta(http-equiv= "X-UA-Compatible" content= "IE=Edge,chrome=1")
     %meta{name: "viewport", content:"width=device-width, initial-scale=1.0"}
-
-    %title ubiqua
-    %meta{name: "description", content: "ubiqua's main website"} 
+    %title= yield(:page_title)
+    %meta{name: "keywords", content:yield(:keywords)}
+    %meta{name: "description", content:yield(:description)} 
     %meta{name: "author", content: "ubiqua"} 
+
+    / open graph meta tags -- esto es lo que sale en FB :
+    %meta{property:"og:title", content: "ubiqua | Soluciones de Software Empresarial"}
+    %meta{property:"og:type", content: "website"} 
+    %meta{property:"og:image", content: "/assets/logodark.png"}
+    %meta{property:"og:url", content:"http://ubiqua.me"}
+    %meta{property:"og:description", content:"ubiqua es una compañia que desarrolla software empresarial en panama. Ofrecemos una applicacion que administra la fuerza de ventas de empresas."}
+   
+    
 
     = csrf_meta_tags
 
