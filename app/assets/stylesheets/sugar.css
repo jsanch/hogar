@@ -41,14 +41,7 @@
   min-height: 100px;
 }
 @media (max-width: 940px){
-  .landing-image img{
-    display: none;
-  }
 
-  .send-btn{
-    width:100% !important;
-    margin-top: 10px;
-  }
   .footer{
     padding-bottom: 0px !important;
   }
@@ -57,6 +50,7 @@
   }
   .call-to-action{
     max-width: 90% !important;
+    bottom: 15px !important;
   }
   .navbar .nav li.active {
   border-top: 0px;
@@ -133,7 +127,21 @@ margin-bottom: 0px;
   display: inline-block;
   padding-bottom: 9px;
 }
-
+@media (max-width: 940px){
+  .landing-image img{
+    display: none;
+  }
+    .email-contact {
+    width:100% !important;
+    }
+    .mobile-nav{
+      font-size: 14px !important;
+    }
+    .send-btn{
+      width:100% !important;
+      margin-top: 10px;
+    }
+  }
 /*****************************
         Call to Action
 *****************************/
@@ -304,7 +312,14 @@ footer .social-links {
 #subintro.about-us {
   background:#f5f5f5 url('/assets/balloon.jpg') no-repeat center center;
 }
-
+.position{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight:bold;
+}
+.intern-name{
+  margin-bottom: 2px;
+}
 .team-member-pic {
   float: left;
   -webkit-border-radius: 500px;
@@ -331,6 +346,7 @@ footer .social-links {
   .team-member-info h4{
     width: 200px;
   }
+
 }
 /*****************************
          Producto
@@ -339,6 +355,7 @@ footer .social-links {
   font-size: 18px;
   line-height: 30px;
 }
+
 .product-content{
   text-align: justify;
   font-size: 15px;
@@ -359,6 +376,14 @@ footer .social-links {
 .feature-info{
   margin-bottom: 20px;
 }
+@media (max-width: 940px){
+  section#subintro {
+    height:200px;
+    }
+    .product-description {
+    line-height: 22px;
+    }
+  }
 /*****************************
          Contactenos
 *****************************/
@@ -367,7 +392,12 @@ footer .social-links {
   height: 100%;
   width: 100%;
 }
-
+@media (max-width: 940px){
+  .btn-movil{
+    width: 100%;
+    height: 45px;
+  }
+}
 /*****************************
             Blog
 *****************************/
@@ -408,6 +438,9 @@ footer .social-links {
   background: #f5f5f5 url('/assets/balls2.jpg') no-repeat center center;
 }
 
+#subintro.brainteaser.error404 {
+  background: #f5f5f5 url('/assets/404.jpg') no-repeat center center;
+}
 .answer p {
   padding: 0 0 0 15px;
   margin: 10px 0 20px;
