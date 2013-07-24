@@ -293,6 +293,10 @@ footer .social-links {
   background-color: #3b5999;
 }
 
+.icon-rounded.icon-google-plus:hover {
+  background-color: #D73D32;
+}
+
 .icon-rounded.icon-twitter:hover {
   background-color: #4099ff;
 }
