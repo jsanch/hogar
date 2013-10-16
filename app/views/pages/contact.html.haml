@@ -19,7 +19,7 @@
 
 .container
   .row
-    .span4
+    .span12
       %aside
         .widget
           %h4 Contáctanos
@@ -54,23 +54,24 @@
             %li
               %a{href: "https://github.com/ubiqua", title: "Github"}
                 %i.icon-rounded.icon-32.icon-github-alt.social-media
-    .span8
-      .spacer30
-      %form.contact-form{action: "#", method: "post", name: "comment-form"}
-        .row
-          .span4
-            %label
-              Nombre
-              %span *
-            %input#form-name.input-block-level{placeholder: "Tu nombre", type: "text"}/
-          .span4
-            %label
-              Correo Electrónico
-              %span *
-            %input#form-email.email-contact.input-block-level{placeholder: "Tu correo electrónico", type: "email"}/
-          .span8
-            %label
-              Mensaje
-              %span *
-            %textarea.input-block-level{placeholder: "Tu mensaje", rows: "9"}
-            %button.btn.btn-color.btn-movil{type: "submit"} Enviar
+    -#
+      .span8
+        .spacer30
+        %form.contact-form{action: "#", method: "post", name: "comment-form"}
+          .row
+            .span4
+              %label
+                Nombre
+                %span *
+              %input#form-name.input-block-level{placeholder: "Tu nombre", type: "text"}/
+            .span4
+              %label
+                Correo Electrónico
+                %span *
+              %input#form-email.email-contact.input-block-level{placeholder: "Tu correo electrónico", type: "email"}/
+            .span8
+              %label
+                Mensaje
+                %span *
+              %textarea.input-block-level{placeholder: "Tu mensaje", rows: "9"}
+              %button.btn.btn-color.btn-movil{type: "submit"} Enviar
