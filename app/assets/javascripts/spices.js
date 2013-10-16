@@ -15,8 +15,3 @@ $('#show-ans').click(function(){
   $(".well.answer").show();
   $("#show-ans").hide();
 });
-
-$('.scroll-button').click(function ()
-{ window.scrollBy(0,450);
-	animateDuration(100);
-})
