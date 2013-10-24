@@ -19,7 +19,7 @@
 
 .container
   .row
-    .span4
+    .span12
       %aside
         .widget
           %h4 Contáctanos
@@ -28,24 +28,24 @@
               %label
                 %i.icon-phone
                 %strong Teléfono :
-              %a{href: "tel:+50762135138"} +507 6213 5138
+                %a{href: "tel:+50762135138"} +507 6213 5138
             %li
               %label
                 %i.icon-envelope-alt
                 %strong Correo Electrónico :
-              %a{href: "mailto:ubiqua@ubiqua.me"} ubiqua@ubiqua.me
+                %a{href: "mailto:ubiqua@ubiqua.me"} ubiqua@ubiqua.me
             %li
               %label
                 %i.icon-map-marker
                 %strong Dirección :
-              %address
-                %strong HMGV, S.A.
-                %br/
-                Calle 50, Plaza Sitio Antiguao Local 1 PB
-                %br/
-                Urbanización San Francisco
-                %br/
-                Ciudad de Panamá, Panamá
+                %address.address
+                  %strong UBIQUA, S.A.
+                  %br/
+                  Calle 50, Plaza Sitio Antiguao Local 1 PB
+                  %br/
+                  Urbanización San Francisco
+                  %br/
+                  Ciudad de Panamá, Panamá
         .widget
           %ul.social-links
             %li
@@ -54,6 +54,7 @@
             %li
               %a{href: "https://github.com/ubiqua", title: "Github"}
                 %i.icon-rounded.icon-32.icon-github-alt.social-media
+  /
     .span8
       .spacer30
       %form.contact-form{action: "#", method: "post", name: "comment-form"}

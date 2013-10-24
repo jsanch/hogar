@@ -21,52 +21,13 @@
 .team-member-info p{
   min-height: 100px;
 }
-@media (max-width: 940px){
 
-  .footer{
-    padding-bottom: 0px !important;
-  }
-  .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
-  padding-bottom: 15px;
-  }
-  .call-to-action{
-    max-width: 90% !important;
-    bottom: 15px !important;
-  }
-  .navbar .nav li.active {
-  border-top: 0px;
-  }
-  #form-email {
-  width:80% !important;
-  }
-  .main-message{
-    font-size: 25px !important;
-    line-height: 25px !important;
-  }
-  .sub-message strong{
-    font-size: 15px;
-    line-height: 15px;
-  }
-  .sub-message{
-    line-height: 15px !important;
-  }
-  .section#subintro {
-    height: 300px !important;
-  }
-  .navbar .nav {
-  width: 100%;
-  margin-top: 25px;
-  }
-  .navbar .nav > li > a {
-  padding: 10px 20px 10px
-  }
-}
 .moreInfo{
   text-align:justify;
   text-align: right;
 }
 
-#second-feature{
+.second-feature{
   text-align: left;
 }
 
@@ -75,8 +36,8 @@
 }
 .button-call{
   display: block;
-  width: 348px;
-  height: 37px;
+  width: 348px !important;
+  height: 45px !important;
   border-radius: 2px;
   font-size: 16px;
   vertical-align: middle;
@@ -84,15 +45,12 @@
   padding-top: 6px;
   letter-spacing: 1px;
 }
-.rec.well, .thanks.well {
-  text-align: center;
-  margin-bottom: 0px;
-}
+
 .navbar-fixed-top {
 margin-bottom: 0px;
 }
 
-.thanks.well {
+.thanks {
   display: none;
 }
 
@@ -118,21 +76,6 @@ margin-bottom: 0px;
   display: inline-block;
   padding-bottom: 9px;
 }
-@media (max-width: 940px){
-  .landing-image img{
-    display: none;
-  }
-    .email-contact {
-    width:100% !important;
-    }
-    .mobile-nav{
-      font-size: 14px !important;
-    }
-    .send-btn{
-      width:100% !important;
-      margin-top: 10px;
-    }
-  }
 
 .logo-image{
   max-height: 100px;
@@ -150,7 +93,7 @@ margin-bottom: 0px;
 .margin-features{
   margin-top: 7%;
   margin-bottom: 10%;
-  max-width: 950px;
+  max-width: 1050px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -172,6 +115,11 @@ margin-bottom: 0px;
   border-top-right-radius: 0px;
   font-size: 12px;
 }
+.span7.center-icon {
+margin-left: 20px;
+text-align: right;
+}
+
 /*****************************
         Call to Action
 *****************************/
@@ -334,6 +282,9 @@ footer .social-links {
 .footer{
   margin-top: 0px;
 }
+.footer-container{
+ margin-left: 150px;
+}
 .icon-rounded.icon-facebook:hover {
   background-color: #3b5999;
 }
@@ -382,21 +333,7 @@ footer .social-links {
 .team-member-info p{
   min-height: 100px;
 }
-@media (max-width: 940px){
-  .team-member-info p{
-  min-height: 50px;
-  }
-  .team .row{
-    margin-bottom: 0px;
-  }
-  .team .row .span6{
-    margin-bottom: 20px;
-  }
-  .team-member-info h4{
-    width: 200px;
-  }
 
-}
 /*****************************
          Producto
 *****************************/
@@ -471,14 +408,7 @@ footer .social-links {
 #subintro.manager{
     background:#fff url('/assets/manager.png') no-repeat;
 }
-@media (max-width: 940px){
-  section#subintro {
-    height:200px;
-    }
-    .product-description {
-    line-height: 22px;
-    }
-  }
+
 .image-product{
   width:80%;
 }
@@ -486,9 +416,11 @@ footer .social-links {
   text-align: center;
 }
 .product-feature{
-  text-align:justify;
-  text-align: right;
   top: 60px;
+  position: relative;
+}
+.short-feature{
+  top: 30px;
   position: relative;
 }
 .icon-object{
@@ -501,6 +433,9 @@ footer .social-links {
   margin-right:0px;
   color: #505050;
 }
+.rec.well.email-send{
+  text-align: center;
+}
 /*****************************
          Contactenos
 *****************************/
@@ -509,11 +444,9 @@ footer .social-links {
   height: 100%;
   width: 100%;
 }
-@media (max-width: 940px){
-  .btn-movil{
-    width: 100%;
-    height: 45px;
-  }
+
+.address{
+  margin-left: 25px;
 }
 /*****************************
             Blog
@@ -587,4 +520,146 @@ footer .social-links {
 
 .recursos.trisfera li {
   line-height: 28px
+}
+/******************************
+      Mobile version
+*******************************/
+
+@media (max-width: 940px){
+  section#subintro {
+    height: 400px;
+    }
+    .product-description {
+    line-height: 22px;
+    }
+  .btn-movil{
+    width: 100%;
+    height: 45px;
+  }
+  .team-member-info p{
+  min-height: 50px;
+  }
+  .team .row{
+    margin-bottom: 0px;
+  }
+  .team .row .span6{
+    margin-bottom: 20px;
+  }
+  .team-member-info h4{
+    width: 200px;
+  }
+  .tec-container .span3{
+
+  }
+}
+@media (max-width: 940px){
+  .landing-image img{
+    display: none;
+  }
+  .mobile-cta{
+    color: #FFF7F7;
+    margin-right: 20px;
+    text-shadow: 1px 1px #252222;
+  }
+    .email-contact {
+    width:100% !important;
+    }
+    .mobile-nav{
+      font-size: 14px !important;
+    }
+    .send-btn{
+      width:100% !important;
+      margin-top: 10px;
+    }
+    .button-call{
+      padding-left: 45px;
+      width:80%;
+    }
+    .moreInfo{
+      text-align: center !important;
+    }
+    .center-title{
+      font-size: 25px;
+    }
+    .tec-container .span3{
+      margin-bottom: 40px;
+    }
+    .margin-section{
+      margin-bottom: 40px;
+    }
+    .logo-image{
+      margin-bottom: 30px;
+    }
+    .margin-features{
+      display: table !important;
+      margin-top: 15%
+    }
+    .second-image{
+      display: table-footer-group !important;
+    }
+    .second-feature{
+      display: table-header-group !important;
+    }
+    .display-none{
+      display: none;
+    }
+    .short-feature{
+      top:0px;
+    }
+  }
+
+/**********************************
+features
+***********************************/
+@media (max-width: 940px){
+  .icon-object{
+    font-size:100px;
+    text-align: center;
+  }
+  .center-icon{
+    text-align: center;
+  }
+}
+@media (max-width: 940px){
+
+  .footer{
+    padding-bottom: 0px !important;
+  }
+  .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+  padding-bottom: 15px;
+  }
+  .call-to-action{
+    max-width: 90% !important;
+    bottom: 15px !important;
+  }
+  .navbar .nav li.active {
+  border-top: 0px;
+  }
+  #form-email {
+  width:80% !important;
+  }
+  .main-message{
+    font-size: 25px !important;
+    line-height: 25px !important;
+  }
+  .sub-message strong{
+    font-size: 15px;
+    line-height: 15px;
+  }
+  /**.sub-message{
+    line-height: 15px !important;
+  }**/
+  .navbar .nav {
+  width: 100%;
+  margin-top: 25px;
+  }
+  .navbar .nav > li > a {
+  padding: 10px 20px 10px
+  }
+  .input-landing{
+    padding-left: 48px !important;
+  }
+  .product-feature{
+    top:0px;
+  }
 }

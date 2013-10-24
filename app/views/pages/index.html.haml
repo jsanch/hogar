@@ -17,13 +17,14 @@
           acelera
           tu proceso de ventas
         %br
-        %span.sub-message.animated
-          Regístrate para más información
-          %input#form-name.input-landing{type:"email", placeholder:"Nombre"}
-          %input#form-email.input-landing{type:"email", placeholder:"Email"}
-          %a.btn-color.button-call.animated#btn-call{href: "/product"}
-            Regístrate
-            %i.icon-double-angle-right
+        .email-send 
+          %span.sub-message.animated
+            Regístrate para pedir un demo del producto
+            = form_tag(leads_path, class: "landingpage", remote: true) do
+              = email_field_tag "email", nil, id: "form-email", class: "input-landing", placeholder: "correo electrónico"
+              = submit_tag "Regístrate", id:"btn-call", class: "btn-color btn-large send-btn button-call"
+        .thanks
+          %h3 Gracias, pronto te estaremos contactando! 
   .scroll-button-area
     #button.btn.center-element.btn-inverse.scroll-button
       %i.icon-chevron-down 
@@ -39,9 +40,9 @@
       .span7
         %img.image-feature.center-element{src:"/assets/productivity-icon.png", alt:""}
     .row-fluid.margin-features   
-      .span7
+      .span7.second-image
         %img.image-feature.center-element{src:"/assets/service-icon.png", alt:""}   
-      .span5.moreInfo#second-feature
+      .span5.moreInfo.second-feature
         %h4 Aumenta las visitas a clientes de tus vendedores
         %p 
           Tramita y envía los pedidos de tus clientes al sistema de facturación desde el dispositivo móvil de tus vendedores. Esto les da más tiempo para vender ya que elimina papeleo y evita que ellos tengan que ir o llamar a casa matriz para meter los pedidos.
@@ -76,27 +77,20 @@
     .margin-section
       %h3.center-title Sé uno de nuestros clientes
       .row-fluid.tec-container
-        .span3
+        .span4
           %img.logo-image.center-element{src:"/assets/logo-feduro.png", alt:""} 
-        .span3
+        .span4
           %img.logo-image.center-element{src:"/assets/logo-haseth.png", alt:""} 
-        .span3
+        .span4
           %img.logo-image.center-element{src:"/assets/logo-arrocha.png", alt:""} 
-        .span3
-          %img.logo-image.center-element{src:"/assets/logo-prodpan.png", alt:""} 
   <!-- Begin MailChimp Signup Form -->
   / Begin MailChimp Signup Form
   %link{href: "//cdn-images.mailchimp.com/embedcode/slim-081711.css", rel: "stylesheet", type: "text/css"}/
   #mc_embed_signuprec.rec.well.email-send
-    %form#mc-embedded-subscribe-form.validate{action: "http://ubiqua.us7.list-manage2.com/subscribe/post?u=be8c1d6972b3c867f748e3855&id=fe2f59c521", method: "post", name: "mc-embedded-subscribe-form", novalidate: "", target: "_blank"}
+    %h3.center-title Danos tu email para enterarte de nuestros servicios
+    %form#mc-embedded-subscribe-form.form-inline.validate{action: "http://ubiqua.us7.list-manage2.com/subscribe/post?u=be8c1d6972b3c867f748e3855&id=fe2f59c521", method: "post", name: "mc-embedded-subscribe-form", novalidate: "", target: "_blank"}
       %input#mce-EMAIL#form-email.landingpage{name: "EMAIL", placeholder: "correo electrónico", required: "", type: "email", value: ""}/
-      .clear
-        %input#mc-embedded-subscribe.btn.btn-large.btn-color.landingpage.send-btn{name: "subscribe", type: "submit", value: "Enviar"}/
+      %input#mc-embedded-subscribe.btn.btn-large.btn-color.landingpage.send-btn{name: "subscribe", type: "submit", value: "Enviar"}/
 / End mc_embed_signup
-.rec.well.email-send
-  %h3.center-title Danos tu email para saber más sobre nuestros servicios
-  = form_tag(leads_path, class: "form-inline", remote: true) do
-    = email_field_tag "email", nil, id: "form-email", class: "landingpage", placeholder: "Email"
-    = submit_tag "Enviar", class: "btn btn-large btn-color landingpage send-btn"
 .thanks.well
   %h3 Gracias, pronto te estaremos contactando!

@@ -3,8 +3,13 @@
 ***************************/
 
 $('#form-email.landingpage + .btn-large').click(function(){
-  $(".well.thanks").show();
-  $(".well.rec").hide();
+  $(".thanks").show();
+  $(".email-send").hide();
+});
+
+$('#form-email.landingpage + .btn-large').click(function(){
+  $(".thanks").show();
+  $(".email-send").hide();
 });
 
 /***************************
@@ -16,7 +21,7 @@ $('#show-ans').click(function(){
   $("#show-ans").hide();
 });
 
-$('.scroll-button').click(function ()
-{ window.scrollBy(0,450);
-	animateDuration(100);
-})
+$('.scroll-button').click(function() {
+  $("html, body").animate({ scrollTop: 500 }, "slow");
+  return false;
+});
