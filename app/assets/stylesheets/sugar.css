@@ -459,6 +459,20 @@ footer .social-links {
 /*****************************
            Acertijos
 *****************************/
+.bt-title{
+  font-weight: 300;
+font-size: 50px;
+line-height: 55px;
+padding: 10px;
+background: #000000;
+background: rgba(0,0,0,0.6);
+display: inline-block;
+text-rendering: optimizelegibility;
+clear: both;
+margin: 10px 0;
+color: white;
+margin-top: 150px;
+}
 
 #subintro.brainteaser.donkey {
   background: #f5f5f5 url('/assets/donkey3.jpg') no-repeat center center;
