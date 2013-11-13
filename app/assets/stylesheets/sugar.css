@@ -214,7 +214,8 @@ color: white;
 }
 .tec-feature{
   text-align: center;
-  font-size: 15px
+  font-size: 15px;
+  margin-top: 15px
 }
 .tec-container{
   margin-bottom: 8%;
@@ -223,8 +224,6 @@ color: white;
 .even-section{
   background-color: #f5f5f5;
   border: solid 1px #E4E4E4;
-  margin-left: -20px;
-  margin-right: -20px;
 }
 /*****************************
             Forms
@@ -382,40 +381,20 @@ footer .social-links {
   text-align: center;
   color: grey;
 }
-.catalog-cta{
+.cta-features{
   margin: 0;
   max-width: 450px;
   padding: 0px 0px;
-  text-align: left;
-  position: absolute;
   top: 200px;
   font-size: 20px;
   letter-spacing: 0.06em;
   line-height: 28px;
+  position: absolute; 
+  text-align: left;
 }
 .orders-cta{
-  margin: 0;
-  max-width: 450px;
-  padding: 0px 0px;
   text-align: right;
-  position: absolute;
-  top: 200px;
-  font-size: 20px;
-  letter-spacing: 0.06em;
-  line-height: 28px;
-  margin-left: 55%;
-}
-
-.manager-cta{
-  margin: 0;
-  max-width: 450px;
-  padding: 0px 0px;
-  text-align: left;
-  position: absolute;
-  top: 150px;
-  font-size: 20px;
-  letter-spacing: 0.06em;
-  line-height: 28px;
+  margin-left: 40%;
 }
 .product-description{
   font-size: 18px;
@@ -441,13 +420,13 @@ footer .social-links {
   margin-bottom: 20px;
 }
 #subintro.catalog{
-    background:#fff url('/assets/catalog-small.png') no-repeat center center;
+    background:#fff url('/assets/catalog.png') no-repeat center center;
 }
 #subintro.orders{
-    background:#fff url('/assets/orders-small.png') no-repeat center center;
+    background:#fff url('/assets/orders.png') no-repeat center center;
 }
 #subintro.manager{
-    background:#fff url('/assets/manager-small.png') no-repeat center center;
+    background:#fff url('/assets/manager.png') no-repeat center center;
 }
 
 .image-product{
@@ -589,8 +568,9 @@ footer .social-links {
   .team-member-info h4{
     width: 200px;
   }
-  .tec-container .span3{
-
+  .even-section{
+  margin-left: -20px;
+  margin-right: -20px;
   }
 }
 @media (max-width: 940px){
@@ -670,7 +650,6 @@ features
   padding-bottom: 15px;
   }
   .call-to-action{
-    max-width: 90% !important;
     bottom: 15px !important;
   }
   .navbar .nav li.active {
@@ -709,14 +688,21 @@ features
 }
 @media (min-width: 1400px){
   section#subintro {
-  width:1920px;
-  height:550px;
+  height:900px;
+  }
+  .call-to-action{
+    top:250px;
+    max-width: 700px;
   }
   #subintro.product-picture{
     background:#fff url('/assets/tablet-ubiqua5.jpg') no-repeat center center;
   }
   .feature-info{
     margin-bottom: 20px;
+  }
+  .cta-features{
+    max-width: 550px;
+    top:400px;
   }
   #subintro.catalog{
       background:#fff url('/assets/catalog.png') no-repeat center center;
