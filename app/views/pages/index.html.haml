@@ -11,6 +11,7 @@
 -content_for :subintro do
   %section#subintro.landingpage.mainMessage
     .container
+<<<<<<< HEAD
       %section.call-to-action.span8
         %span.main-message.animated.bounceInDown
           %strong ubiqua 
@@ -53,3 +54,93 @@
       = submit_tag "Enviar", class: "btn btn-large btn-color landingpage send-btn"
   .thanks.well
     %h3 Gracias, pronto te estaremos contactando!
+=======
+      %section.call-to-action
+        %span.main-title-product.animated
+          Conecta y
+          acelera
+          tu proceso de ventas
+        %br
+        .send-cta 
+          %span.sub-title-product.animated
+            Regístrate para pedir un demo del producto
+            = form_tag(leads_path, class: "landingpage", remote: true) do
+              = email_field_tag "email", nil, id: "form-email", class: "input-landing", placeholder: "correo electrónico"
+              = submit_tag "Regístrate", id:"btn-call", class: "btn btn-color btn-large send-btn button-call"
+        .thanks-cta
+          %h3 Gracias, pronto te estaremos contactando! 
+  .scroll-button-area
+    #button.btn.center-element.btn-inverse.scroll-button
+      %i.icon-chevron-down 
+.container
+  .margin-section
+    %h3.center-title Aumenta la productividad en tu negocio
+    %h4.subheading-feature Bríndale a tus vendedores una aplicación donde puedan mostrar y vender tus productos fácilmente desde cualquier dispositivo
+    .row-fluid.margin-features
+      .span5.moreInfo
+        %h4 Mejora el servicio al cliente
+        %p
+          Equipa a tus vendedores con un catálogo de productos digital que se conecta con tu base de datos. Con esto, ellos podrán informar a sus clientes sobre precios actualizados, inventario y detalles de los productos de manera interactiva.
+          %a{href: "/catalog"} Más información
+      .span7
+        %img.image-feature.center-element{src:"/assets/productivity-icon.png", alt:""}
+    .row-fluid.margin-features   
+      .span7.second-image
+        %img.image-feature.center-element{src:"/assets/service-icon.png", alt:""}   
+      .span5.moreInfo.second-feature
+        %h4 Aumenta las visitas a clientes de tus vendedores
+        %p 
+          Tramita y envía los pedidos de tus clientes al sistema de facturación desde el dispositivo móvil de tus vendedores. Esto les da más tiempo para vender ya que elimina papeleo y evita que ellos tengan que ir o llamar a casa matriz para meter los pedidos.
+          %a{href: "/orders"} Más información 
+  /   
+    .row-fluid.margin-features   
+      .span5.moreInfo
+        %h4 Localiza áreas de oportunidad en tiempo real
+        %p 
+          Con un resumen de estadísticas, informa a tus gerentes sobre los resultados de ventas segun vendedor, producto y/o cliente. Así tus gerentes podrán monitorear a sus vendedores y tomar decisiones remotamente.
+          %a{href: "/manager"} Más información
+      .span7
+        %img.image-feature.center-element{src:"/assets/manage-icon.png", alt:""} 
+     
+%section.even-section
+  .container
+    .margin-section
+      %h3.center-title Implementa las últimas tecnologías
+      .row-fluid.tec-container
+        .span3
+          %img.tec-image.center-element{src:"/assets/cloud.png", alt:""}
+          .tec-feature Almacemiento en la nube
+        .span3
+          %img.tec-image.center-element{src:"/assets/nosignal.png", alt:""}
+          .tec-feature Funcionamiento en modo offline
+        .span3
+          %img.tec-image.center-element{src:"/assets/multiplatform.png", alt:""}
+          .tec-feature Multi plataforma
+        .span3
+          %img.tec-image.center-element{src:"/assets/update.png", alt:""}
+          .tec-feature Integración con diferentes ERPs
+%section   
+  .container 
+    .margin-section
+      %h3.center-title Sé uno de nuestros clientes
+      .row-fluid.tec-container
+        .span4
+          %img.logo-image.center-element{src:"/assets/logo-feduro.png", alt:""} 
+        .span4
+          %img.logo-image.center-element{src:"/assets/logo-haseth.png", alt:""} 
+        .span4
+          %img.logo-image.center-element{src:"/assets/logo-arrocha.png", alt:""} 
+  <!-- Begin MailChimp Signup Form -->
+  / Begin MailChimp Signup Form
+%section.even-section
+  .container
+  %link{href: "//cdn-images.mailchimp.com/embedcode/slim-081711.css", rel: "stylesheet", type: "text/css"}/
+  #mc_embed_signuprec.rec.well.email-send
+    %h3.center-title Danos tu email para enterarte de nuestros servicios
+    %form#mc-embedded-subscribe-form.form-inline.validate{action: "http://ubiqua.us7.list-manage2.com/subscribe/post?u=be8c1d6972b3c867f748e3855&id=fe2f59c521", method: "post", name: "mc-embedded-subscribe-form", novalidate: "", target: "_blank"}
+      %input#mce-EMAIL#form-email.landingpage.input-landing{name: "EMAIL", placeholder: "correo electrónico", required: "", type: "email", value: ""}/
+      %input#mc-embedded-subscribe.btn.btn-large.btn-color.landingpage.send-btn{name: "subscribe", type: "submit", value: "Enviar"}/
+/ End mc_embed_signup
+.thanks.well
+  %h3 Gracias, pronto te estaremos contactando!
+>>>>>>> website-redesign

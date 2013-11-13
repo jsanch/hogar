@@ -64,15 +64,15 @@
     /le footer
     %footer.footer
       .container
-        .row
-          .span4
+        .row-fluid
+          .span3
             .widget
               / logo
               %a.brand.logo{href: "index"}
                 %img{src: "/assets/logo-dark.png"}
               %address
                 %i.icon-map-marker
-                %strong HMGV, S.A.
+                %strong UBIQUA, S.A.
                 %br
                 Calle 50, Plaza Sitio Antiguao Local 1 PB
                 %br 
@@ -85,7 +85,7 @@
               %br
               %span
                 %i.icon-envelope-alt
-                %a{href: "mailto:ubiqua@ubiqua.me"} ubiqua@ubiqua.me 
+                %a{href: "mailto:ghurtado@ubiqua.me"} ghurtado@ubiqua.me 
               %br
               .widget
                 %ul.social-links
@@ -93,11 +93,25 @@
                     %a{href: "https://www.facebook.com/ubiqua.me", title: "Facebook"}
                       %i.icon-rounded.icon-32.icon-facebook.social-media.footer
                   %li
-                    %a{href: "https://plus.google.com/115647790797091463837", title: "Google+", rel: "publisher"}
-                      %i.icon-rounded.icon-32.icon-google-plus.social-media.footer
+                    %a{href: "https://twitter.com/ubiquame", title: "Twitter", rel: "publisher"}
+                      %i.icon-rounded.icon-32.icon-twitter.social-media.footer
+                  %li
+                    %a{href: "http://www.linkedin.com/company/3087639", title: "LinkedIn", rel: "publisher"}
+                      %i.icon-rounded.icon-32.icon-linkedin.social-media.footer
                   %li
                     %a{href: "https://github.com/ubiqua", title: "Github"}
                       %i.icon-rounded.icon-32.icon-github-alt.social-media.footer
+          .span3
+            .widget
+              %h5 Producto
+              %ul.regular
+                %li
+                  %a{href: "/catalog"} Catálogo
+                %li
+                  %a{href: "/orders"} Envío de pedidos
+              /  
+                %li
+                  %a{href: "/manager"} Análisis de ventas
           .span3
             .widget
               %h5 Empresa
@@ -106,6 +120,8 @@
                   %a{href: "/about"} Sobre Nosotros
                 %li
                   %a{href: "/contact"} Contáctanos
+                %li
+                  %a{href: "http://www.ubiquame.blogspot.com/"} Blog
                 %li
                   %a{href: "/trisfera"} Recursos de Trisfera Conf
 

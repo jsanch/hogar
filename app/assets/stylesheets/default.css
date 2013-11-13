@@ -250,4 +250,5 @@ ul.filter li.active a:hover,.flex-control-nav li a:hover, .flex-control-nav li a
 .thumbnail h4 a:hover, .thumbnail .meta  span a:hover, ul.recent li h6 a:hover, ul.post-meta li a:hover, .media-body span, .media-body .media-heading a:hover, form label span, article.last-post h5 a:hover{
 	color: #f16b23;
 	text-decoration:none;
+  font-size: 20px;
 }

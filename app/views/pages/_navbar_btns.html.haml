@@ -1,7 +1,21 @@
 %li{class: active_if_home}
   %a.mobile-nav{href: "/index"} Inicio
 %li{class: active_if_product}
+<<<<<<< HEAD
   %a.mobile-nav{href: "/product"} Producto
+=======
+  %a.mobile-nav.dropdown-toggle{"data-toggle" => "dropdown", href:"#"} 
+    Producto
+    %i.icon-chevron-down
+  %ul.dropdown-menu.pull-right
+    %li 
+      %a{href:"/catalog"} Catálogo
+    %li 
+      %a{href:"/orders"} Envío de pedidos
+  /
+    %li 
+      %a{href:"/manager"} Análisis de ventas
+>>>>>>> website-redesign
 %li{class: active_if_blog}
   %a.mobile-nav{href: "http://www.ubiquame.blogspot.com/"} Blog
 %li{class: active_if_contact}
