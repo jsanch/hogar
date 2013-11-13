@@ -386,7 +386,7 @@ footer .social-links {
 }
 .cta-features{
   margin: 0;
-  max-width: 450px;
+  max-width: 400px;
   padding: 0px 0px;
   top: 200px;
   font-size: 20px;
@@ -423,7 +423,7 @@ footer .social-links {
   margin-bottom: 20px;
 }
 #subintro.catalog{
-    background:#fff url('/assets/catalog-small.png') no-repeat center center;
+    background:#fff url('/assets/catalog.png') no-repeat center center;
 }
 #subintro.orders{
     background:#fff url('/assets/orders-small.png') no-repeat center center;
@@ -691,7 +691,7 @@ features
 }
 @media (min-width: 1880px){
   section#subintro {
-  height:900px;
+  height:700px;
   }
   .call-to-action{
     top:250px;
@@ -707,7 +707,7 @@ features
     max-width: 550px;
     top:400px;
   }
-  #subintro.catalog{
+/**  #subintro.catalog{
       background:#fff url('/assets/catalog.png') no-repeat center center;
   }
   #subintro.orders{
@@ -722,5 +722,6 @@ features
   .orders-cta{
     margin-left: 45%;
   }
+**/
 
 }
