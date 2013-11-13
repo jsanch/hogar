@@ -7,9 +7,9 @@ $('#form-email.landingpage + .btn-large').click(function(){
   $(".email-send").hide();
 });
 
-$('#form-email.landingpage + .btn-large').click(function(){
-  $(".thanks").show();
-  $(".email-send").hide();
+$('.input-landing + #btn-call').click(function(){
+  $(".thanks-cta").show();
+  $(".send-cta").hide();
 });
 
 /***************************
@@ -20,6 +20,10 @@ $('#show-ans').click(function(){
   $(".well.answer").show();
   $("#show-ans").hide();
 });
+
+/***************************
+         Scroller
+***************************/
 
 $('.scroll-button').click(function() {
   $("html, body").animate({ scrollTop: 500 }, "slow");

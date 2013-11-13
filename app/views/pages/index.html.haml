@@ -17,13 +17,13 @@
           acelera
           tu proceso de ventas
         %br
-        .email-send 
+        .send-cta 
           %span.sub-title-product.animated
             Regístrate para pedir un demo del producto
             = form_tag(leads_path, class: "landingpage", remote: true) do
               = email_field_tag "email", nil, id: "form-email", class: "input-landing", placeholder: "correo electrónico"
               = submit_tag "Regístrate", id:"btn-call", class: "btn btn-color btn-large send-btn button-call"
-        .thanks
+        .thanks-cta
           %h3 Gracias, pronto te estaremos contactando! 
   .scroll-button-area
     #button.btn.center-element.btn-inverse.scroll-button
@@ -48,6 +48,7 @@
         %p 
           Tramita y envía los pedidos de tus clientes al sistema de facturación desde el dispositivo móvil de tus vendedores. Esto les da más tiempo para vender ya que elimina papeleo y evita que ellos tengan que ir o llamar a casa matriz para meter los pedidos.
           %a{href: "/orders"} Más información 
+  /   
     .row-fluid.margin-features   
       .span5.moreInfo
         %h4 Localiza áreas de oportunidad en tiempo real
@@ -56,6 +57,7 @@
           %a{href: "/manager"} Más información
       .span7
         %img.image-feature.center-element{src:"/assets/manage-icon.png", alt:""} 
+     
 %section.even-section
   .container
     .margin-section
