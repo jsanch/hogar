@@ -704,7 +704,7 @@ features
     margin-bottom: 20px;
   }
   .cta-features{
-    max-width: 550px;
+    max-width: 500px;
     top:400px;
   }
 /**  #subintro.catalog{
@@ -719,9 +719,10 @@ features
   #subintro.landingpage{
     background:#fff url('/assets/landing-image.png') no-repeat center center;
   }
+**/
   .orders-cta{
     margin-left: 45%;
   }
-**/
+
 
 }
