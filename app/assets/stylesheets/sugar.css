@@ -549,8 +549,11 @@ footer .social-links {
 *******************************/
 
 @media (max-width: 940px){
-  section#subintro {
-    height: 400px;
+    .span7.center-icon {
+      text-align: center;
+    }
+    section#subintro {
+    height: 350px;
     }
     .product-description {
     line-height: 22px;
@@ -575,8 +578,6 @@ footer .social-links {
   margin-left: -20px;
   margin-right: -20px;
   }
-}
-@media (max-width: 940px){
   .landing-image img{
     display: none;
   }
@@ -598,6 +599,7 @@ footer .social-links {
     .button-call{
       padding-left: 45px;
       width:80%;
+      margin-top: 0px;
     }
     .moreInfo{
       text-align: center !important;
@@ -635,17 +637,21 @@ footer .social-links {
 /**********************************
 features
 ***********************************/
+
 @media (max-width: 940px){
+  .title-area{
+  top:100px;
+  }
   .icon-object{
-    font-size:100px;
+    font-size:60px;
     text-align: center;
+  }
+  .icon-arrow {
+  font-size: 30px;
   }
   .center-icon{
-    text-align: center;
+    text-align: left;
   }
-}
-@media (max-width: 940px){
-
   .footer{
     padding-bottom: 0px !important;
   }
@@ -653,7 +659,7 @@ features
   padding-bottom: 15px;
   }
   .call-to-action{
-    bottom: 15px !important;
+    top: 30px;
   }
   .navbar .nav li.active {
   border-top: 0px;
@@ -661,8 +667,11 @@ features
   #form-email {
   width:80% !important;
   }
+  #form-email.landingpage {
+    width: 230px !important
+  }
   #mc-embedded-subscribe {
-  width:91% !important;
+  width: 286px !important;
   }
   .main-message{
     font-size: 25px !important;
@@ -687,6 +696,10 @@ features
   }
   .product-feature{
     top:0px;
+  }
+  .orders-cta{
+    margin-left: 40%;
+    top: 100px;
   }
 }
 @media (min-width: 1880px){
