@@ -376,7 +376,9 @@ footer .social-links {
 .team-member-info p{
   min-height: 100px;
 }
-
+.newsletter-title{
+  font-size: 20px;
+}
 /*****************************
          Producto
 *****************************/
