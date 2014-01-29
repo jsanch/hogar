@@ -1,0 +1,19 @@
+-content_for :subintro do
+  %section#subintro.mainMessage
+    .container
+      %section.signup-message
+        .send-cta 
+          %span.animated
+            Solicita tu prueba totalmente GRATIS por 14 días dándonos tu correo:
+            = form_tag(leads_path, class: "signup-form form-inline", remote: true) do
+              = email_field_tag "email", nil, id: "form-email", class: "input-signup", placeholder: "correo electrónico"
+              = submit_tag "Pruébalo ahora", id:"btn-call", class: "btn btn-color btn-large send-btn btn-signup"
+    .container.newsletter-signup
+      %link{href: "//cdn-images.mailchimp.com/embedcode/slim-081711.css", rel: "stylesheet", type: "text/css"}/
+      #mc_embed_signuprec.rec.well.email-send
+        %h1 Gracias, pronto te estaremos contactando!   
+        %h4.newsletter-title Mientras tanto, inscríbete a nuestro newsletter y entérate de las últimas noticias en tecnología y tips para la productividad:
+        %form#mc-embedded-subscribe-form.form-inline.validate{action: "http://ubiqua.us7.list-manage2.com/subscribe/post?u=be8c1d6972b3c867f748e3855&id=fe2f59c521", method: "post", name: "mc-embedded-subscribe-form", novalidate: "", target: "_blank"}
+          %input#mce-EMAIL#form-email.landingpage.input-landing{name: "EMAIL", placeholder: "correo electrónico", required: "", type: "email", value: ""}/
+          %input#mc-embedded-subscribe.btn.btn-large.btn-color.landingpage.send-btn{name: "subscribe", type: "submit", value: "Enviar"}/
+      / End mc_embed_signup

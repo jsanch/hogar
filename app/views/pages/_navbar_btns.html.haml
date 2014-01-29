@@ -4,7 +4,7 @@
   %a.mobile-nav.dropdown-toggle{"data-toggle" => "dropdown", href:"#"} 
     Producto
     %i.icon-chevron-down
-  %ul.dropdown-menu.pull-right
+  %ul.dropdown-menu
     %li 
       %a{href:"/catalog"} Catálogo
     %li 
@@ -14,4 +14,5 @@
       %a{href:"/manager"} Análisis de ventas
 %li{class: active_if_blog}
   %a.mobile-nav{href: "http://www.ubiquame.blogspot.com/"} Blog
-%li{class: active_if_contact}
+%li 
+  %input.btn.btn-color.moving-cta{type:"submit", value:"Pruébalo por 14 días GRATIS", onclick:"location.href='/signup'"}

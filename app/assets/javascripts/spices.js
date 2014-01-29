@@ -11,7 +11,15 @@ $('.input-landing + #btn-call').click(function(){
   $(".thanks-cta").show();
   $(".send-cta").hide();
 });
+/***************************
+         Signup Page
+***************************/
 
+$('.input-signup + #btn-call').click(function(){
+  $(".thanks-cta").show();
+  $(".newsletter-signup").show();
+  $(".send-cta").hide();
+});
 /***************************
          Acertijos
 ***************************/
@@ -28,4 +36,8 @@ $('#show-ans').click(function(){
 $('.scroll-button').click(function() {
   $("html, body").animate({ scrollTop: 500 }, "slow");
   return false;
+});
+
+$(document).ready(function() {
+  $('.test-popup-link').magnificPopup({type:'iframe'});
 });

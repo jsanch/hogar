@@ -1,6 +1,9 @@
 /*****************************
         Landing Page
 *****************************/
+.navbar-inner{
+  height:85px;
+}
 .landing-image{
   float: right;
   padding-top: 2%;
@@ -63,7 +66,7 @@ margin-bottom: 0px;
 }
 
 #subintro.landingpage{
-    background:#fff url('/assets/landing-small.png') no-repeat center center;
+    background:#fff url('/assets/landing.jpg') no-repeat center center;
 }
 #form-email.landingpage {
   margin-top: 0px;
@@ -228,6 +231,42 @@ color: white;
   background-color: #f5f5f5;
   border: solid 1px #E4E4E4;
 }
+.moving-cta{
+  padding: 10px !important;
+  margin-top: 20px !important;
+  margin-left: 20px;
+}
+/****************************
+sign up view
+****************************/
+.signup-message{
+  margin-top: 100px;
+  color: #333;
+  font-size: 25px;
+}
+.signup-form{
+  margin-top: 20px;
+}
+.btn-signup{
+height: 50px;
+}
+.input-signup{
+  width:300px;
+}
+.newsletter-signup{
+  display: none;
+}
+/****************************
+        Play button
+*****************************/
+.play-section{
+  padding-top: 20%;
+  padding-left: 70%;
+}
+.play-image{
+  width: 150px;
+}
+
 /*****************************
             Forms
 *****************************/
@@ -425,10 +464,10 @@ footer .social-links {
   margin-bottom: 20px;
 }
 #subintro.catalog{
-    background:#fff url('/assets/catalog.png') no-repeat center center;
+    background:#fff url('/assets/catalog.jpg') no-repeat center center;
 }
 #subintro.orders{
-    background:#fff url('/assets/orders-small.png') no-repeat center center;
+    background:#fff url('/assets/orders.jpg ') no-repeat center center;
 }
 #subintro.manager{
     background:#fff url('/assets/manager-small.png') no-repeat center center;
@@ -641,6 +680,9 @@ features
 ***********************************/
 
 @media (max-width: 940px){
+  .play-image{
+     display: none;
+  }
   .title-area{
   top:100px;
   }

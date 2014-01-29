@@ -19,12 +19,16 @@
         %br
         .send-cta 
           %span.sub-title-product.animated
-            Regístrate para pedir un demo del producto
+            Danos tu correo para darte una prueba GRATUITA:
             = form_tag(leads_path, class: "landingpage", remote: true) do
               = email_field_tag "email", nil, id: "form-email", class: "input-landing", placeholder: "correo electrónico"
-              = submit_tag "Regístrate", id:"btn-call", class: "btn btn-color btn-large send-btn button-call"
+              = submit_tag "Pruébalo ahora", id:"btn-call", class: "btn btn-color btn-large send-btn button-call"
         .thanks-cta
           %h3 Gracias, pronto te estaremos contactando! 
+      %section.play-section
+        %a.test-popup-link{href:"https://vimeo.com/79888716"} 
+          %img.play-image{src:"/assets/play.png", width:"60"}
+
   .scroll-button-area
     #button.btn.center-element.btn-inverse.scroll-button
       %i.icon-chevron-down 
