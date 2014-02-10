@@ -58,15 +58,15 @@ footer .nav-list li a:hover,footer ul.regular li a:hover  {
 
 /* header */
 .navbar .nav li.active {
-	border-top:5px solid #f16b23;	
+	border-top:5px solid #434343;	
 
 }
 .navbar .nav li.active a {
-	color:#f16b23;	
+	color:#434343;	
 }
 
 .navbar .nav li ul.dropdown-menu li a:hover, .navbar .nav li.active ul.dropdown-menu li a:hover  {
-	background:#f16b23;
+	background:#434343;
 	
 }
 .color {
@@ -145,7 +145,7 @@ input[type="color"]:focus,
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: #ffffff;
-  background-color: #f16b23;
+  background-color: #434343;
 }
 
 /* accordion */
@@ -163,18 +163,18 @@ input[type="color"]:focus,
 /* nav */
 .nav-list > .active > a,
 .nav-list > .active > a:hover {
-  background: #f16b23;
+  background: #434343;
 }
 
 
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
-  background: #f16b23;
+  background: #434343;
 }
 
 .nav .dropdown-toggle .caret {
-  border-top-color: #f16b23;
-  border-bottom-color: #f16b23;
+  border-top-color: #434343;
+  border-bottom-color: #434343;
 }
 
 /* custom progress bar according template skin */
@@ -244,7 +244,7 @@ a.thumbnail:hover {
 }
 
 ul.filter li.active a:hover,.flex-control-nav li a:hover, .flex-control-nav li a.active{
-	background: #f16b23;
+	background: #434343;
 }
 
 .thumbnail h4 a:hover, .thumbnail .meta  span a:hover, ul.recent li h6 a:hover, ul.post-meta li a:hover, .media-body span, .media-body .media-heading a:hover, form label span, article.last-post h5 a:hover{
