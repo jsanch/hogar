@@ -240,7 +240,7 @@ color: white;
 sign up view
 ****************************/
 .signup-message{
-  margin-top: 100px;
+  margin-top: 150px;
   color: #333;
   font-size: 25px;
 }
@@ -255,7 +255,12 @@ height: 50px;
 }
 .newsletter-signup{
   display: none;
+  margin-top: -45px;
 }
+.send-cta{
+  text-align: center;
+}
+
 /****************************
         Play button
 *****************************/

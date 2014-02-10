@@ -20,6 +20,8 @@ $('.input-signup + #btn-call').click(function(){
   $(".newsletter-signup").show();
   $(".send-cta").hide();
 });
+
+$('#no-content').parent().css("padding-top", "0px")
 /***************************
          Acertijos
 ***************************/
