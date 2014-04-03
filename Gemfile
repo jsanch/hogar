@@ -27,11 +27,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
 gem 'haml'
 gem 'haml-rails'
 gem 'high_voltage'
-gem 'font-awesome-rails'
+gem 'font-awesome-sass'
 
 gem 'sitemap_generator' 
 
