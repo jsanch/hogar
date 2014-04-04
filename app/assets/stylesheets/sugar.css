@@ -128,6 +128,17 @@ text-align: right;
 .send-btn{
   height:45px;
 }
+
+.play-image:hover{
+    transform:scale(1.1);
+    -ms-transform:scale(1.1); /* IE 9 */
+    -moz-transform:scale(1.1); /* Firefox */
+    -webkit-transform:scale(1.1); /* Safari and Chrome */
+    -o-transform:scale(1.1); /* Opera */
+    text-decoration:none; 
+
+}
+
 /*****************************
         Call to Action
 *****************************/
@@ -160,6 +171,18 @@ section#subintro {
   color: #444;
   position: absolute;
   top: 300px;
+}
+
+.main-title-landing {
+  font-weight: 100;
+  font-size: 35px;
+  line-height: 40px;
+  display: inline-block;
+  text-rendering: optimizelegibility;
+  clear: both;
+  margin: 0px 0;
+  padding-bottom: 40px;
+  line-height: 40px;
 }
 
 .main-title-product {
@@ -269,7 +292,9 @@ height: 50px;
   padding-left: 70%;
 }
 .play-image{
-  width: 150px;
+  font-size: 150px;
+  color: white;
+  position: relative;
 }
 
 /*****************************
@@ -496,11 +521,15 @@ footer .social-links {
   font-size: 170px;
   margin-right:0px;
   color: #505050;
+  display: inline;
+  vertical-align: baseline;
 }
 .icon-arrow{
   font-size: 50px;
   margin-right:0px;
   color: #505050;
+  display: inline;
+  vertical-align: baseline;
 }
 .rec.well.email-send{
   text-align: center;
@@ -594,12 +623,26 @@ footer .social-links {
       Mobile version
 *******************************/
 
+@media (max-width: 650px){
+.main-title-landing{
+    padding-bottom: 120px;
+  }
+  .play-image{
+     padding: 0px;
+     font-size:100px;
+  }
+  .play-section{
+    padding: 0px;
+  padding-top: 120px;
+  text-align: center;
+}
+}
 @media (max-width: 940px){
     .span7.center-icon {
       text-align: center;
     }
     section#subintro {
-    height: 350px;
+    height: 400px;
     }
     .product-description {
     line-height: 22px;
@@ -608,6 +651,7 @@ footer .social-links {
     width: 100%;
     height: 45px;
   }
+  
   .team-member-info p{
   min-height: 50px;
   }
@@ -685,9 +729,6 @@ features
 ***********************************/
 
 @media (max-width: 940px){
-  .play-image{
-     display: none;
-  }
   .title-area{
   top:100px;
   }

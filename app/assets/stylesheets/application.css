@@ -16,7 +16,6 @@
  *= require default
  *= require sugar
  *= require animate
- *= require font-awesome
  *= require_self
  *= require_tree .
 */
